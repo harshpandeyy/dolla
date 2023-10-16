@@ -11,11 +11,12 @@ import {
 import Video from "../../videos/video.mp4";
 import { Button } from "../Button";
 
-export default class index extends Component {
-  state: {
-    hover: boolean;
-  };
-  constructor(props: any) {
+export default class index extends Component{
+ 
+  state:{
+    hover:boolean;
+  }
+  constructor(props:any) {
     super(props);
     this.state = {
       hover: false,
@@ -43,8 +44,6 @@ export default class index extends Component {
               to="signup"
               onMouseEnter={this.onHover}
               onMouseLeave={this.onHover}
-              primary='true'
-              dark='true'
             >
               Get started
               {this.state.hover ? (

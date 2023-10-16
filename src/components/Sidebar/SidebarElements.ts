@@ -2,12 +2,11 @@ import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
-interface SidebarContainerProps {
-    isOpen?: boolean;
-    toggle: ()=> void;
+interface SideBarContainerProps{
+    isOpen:boolean;
 }
 
-export const SidebarContainer = styled.aside<SidebarContainerProps>`
+export const SidebarContainer = styled.aside<SideBarContainerProps>`
 position:fixed;
 z-index:999;
 width:100%;
